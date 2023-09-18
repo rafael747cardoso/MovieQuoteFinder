@@ -10,7 +10,7 @@
 #' @noRd
 fct_filter_terms <- function(dt, terms) {
   
-  # Fix some possible terms ----
+  # Fix some possible problematic terms ----
   terms <- gsub(pattern = "\\?",
                 replacement = "\\\\?",
                 x = terms)
