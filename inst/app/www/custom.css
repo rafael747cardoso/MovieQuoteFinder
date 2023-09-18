@@ -1,0 +1,133 @@
+
+
+/*** Page ***/
+
+.main-nav {
+  margin-top: 50px;
+  margin-bottom: 0.5rem;
+}
+
+/* standard box containers */
+.main-box {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+  border: 1px solid #add8e6;
+  border-radius: 7px;
+  background-color: #E9E9E9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+/*** Header ***/
+
+/* Logo */
+.dashboard-logo {
+  height: 0rem;
+  margin: 0rem;
+  vertical-align: middle;
+}
+
+/* Title */
+.dashboard-title {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-left: 0.35rem;
+  margin-right: 0rem;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/*** Main navbar ***/
+
+.navbar-fixed-top {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-link {
+  border: solid 1px #333333;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.nav-link.active {
+  color: #FFDD40 !important;
+  background-color: #12253C;
+  border: solid 1px #12253C;
+  border-radius: 5px;
+  font-size: 17px !important;
+}
+
+.nav-link:hover {
+  color: #FFFFFF;
+  background-color: #FFDD40;
+}
+
+.nav-link.active:hover {
+  color: #FFFFFF !important;
+  background-color: #925326;
+}
+
+/*** Sub navbar ***/
+
+.nav-tabs {
+  border-bottom: 1px solid #FFDD40;
+}
+
+.nav-tabs .nav-link {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #FFDD40;
+  border: 2px solid #FFDD40;
+  border-bottom: 1px solid #333333;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #FFFFFF;
+  background-color: #FFDD40;
+}
+
+.nav-tabs .nav-link.active:hover {
+  color: #FFFFFF !important;
+  background-color: #FFDD40;
+}
+
+/*** Buttons  ***/
+
+.buttons-stack-input {
+  padding-right: 10px;
+  margin-bottom: 6px;
+}
+
+.buttons-stack-summary {
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-bottom: 6px;
+}
+
+.btn-default {
+  margin-top: 10px;
+}
+
+.bttn-bordered.bttn-default {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #1C3555;
+  border-color: #1C3555;
+}
+
+.bttn-bordered.bttn-default:hover {
+  background-color: #12253C;
+}
+
+

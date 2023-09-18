@@ -1,0 +1,33 @@
+Package: MovieQuoteFinder
+Title: Movie Quote Finder
+Version: 0.0.1
+Authors@R: person('Rafael', 'Cardoso', email = '', role = c('cre', 'aut'))
+Description: A dashboard to search for multiple terms in an single phrase in a text file.
+License: What license is it under?
+Imports: 
+    attachment,
+    bsicons,
+    bslib,
+    config (>= 0.3.2),
+    data.table,
+    devtools,
+    DT,
+    gargoyle,
+    glue,
+    golem (>= 0.4.1),
+    htmltools,
+    htmlwidgets,
+    magrittr,
+    pkgload,
+    purrr,
+    shiny (>= 1.7.5),
+    shinydashboard,
+    shinyjs,
+    shinyWidgets,
+    waiter
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
