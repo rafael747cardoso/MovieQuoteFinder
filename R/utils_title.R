@@ -11,7 +11,7 @@ utils_title <- function() {
       class = "dashboard-logo",
       htmltools::tags$img(
         src = "inst/app/www/logo.png",
-        height = "39px"
+        height = "50px"
       )
     ),
 
