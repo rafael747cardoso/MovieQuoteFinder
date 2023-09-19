@@ -76,6 +76,9 @@ mod_quote_finder_server <- function(id, r){
       ## Filter the phrases for the inputted terms ----
       dt_filtered <- fct_filter_terms(dt = dt,
                                       terms = input$selected_terms)
+      if (nrow(dt_filtered) > 1) {
+        dt_filtered$n <- 1:nrow(dt_filtered)
+      }
 
       ## Display the results ----
       output$terms_tbl <- DT::renderDT(

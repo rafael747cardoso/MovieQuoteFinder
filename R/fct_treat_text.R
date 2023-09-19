@@ -1,16 +1,16 @@
 #' treat_text 
 #'
-#' @description Transform the text object.
+#' @description Transform the text file into a data.table and save it as RDS.
 #'
-#' @param movie_path
-#'
-#' @return The text object as a data.table where each row is a phrase.
+#' @param movie_dir
+#' @param movie_name
+#' @param ext
 #'
 #' @noRd
-fct_treat_text <- function(movie_path) {
+fct_treat_text <- function(movie_dir, movie_name, ext) {
   
   # Read the movie text file ----
-  raw_text <- data.table::fread(movie_path, sep = "\n") 
+  raw_text <- data.table::fread(paste0(movie_dir, "/", movie_name, ext), sep = "\n") 
   names(raw_text) = "phrases"
   
   # Collapse all rows to one single string ----
@@ -21,14 +21,12 @@ fct_treat_text <- function(movie_path) {
                              split = "(?<=[.!?])\\s+",
                              perl = TRUE))
 
-  
-  
-  
-  
   # Make a data.table with all the phrases ----
   dt_phrases <- data.table::data.table(Phrase = phrases)
   dt_phrases$n <- 1:nrow(dt_phrases)
   dt_phrases <- dt_phrases[, c(2, 1)]
   
-  return(dt_phrases)
+  # Save it ----
+  saveRDS(dt_phrases, paste0(movie_dir, "/dt_", movie_name, ".rds"))
+  
 }

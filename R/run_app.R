@@ -22,7 +22,6 @@ run_app <- function(
                    "Star Wars",
                    "The Matrix")
   
-
   # Golem options ----
   golem::with_golem_options(
     app = shiny::shinyApp(
